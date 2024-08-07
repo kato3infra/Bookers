@@ -1,0 +1,61 @@
+<div class="index-box">
+  <div class="index-list-header">
+    <h1>Books</h1>
+  </div>
+
+  <table>
+    <tr>
+      <th>
+        <p>Title</p>  
+      </th>
+      <th>
+        <p>Body</p>
+      </th>
+    </tr>
+
+    <% @books.each do |book| %>
+      <tr>
+        <td>
+          <span><%= book.title %></span>
+        </td>
+        <td>
+          <span><%= book.body %></span>
+        </td>
+        <td>
+          <%= link_to "Show", "/books/#{book.id}" %>
+        </td>
+        <td>
+          <%= link_to "Edit", "/books/#{book.id}/edit" %>
+        </td>
+        <td>
+          <%= link_to "Destroy", "/books/#{book.id}", method: :delete, data: { confirm: "Are you sure?" } %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+<div>
+
+<div class="index-create-header">
+  <h3>New book</h3>
+</div>
+
+
+<%= form_with model: @book, url: '/books', method: :post do |f| %>
+  <div class="new-book-title-box">
+    <div class="new-book-title">
+      <p>title</p>
+    </div>
+    <%= f.text_field :title %>
+  </div>
+
+	<div class="new-book-body-box">
+    <div class="new-book-body">
+      <p>Body</p>
+    </div>
+    <%= f.text_area :body %>
+  </div>
+	<div class="new-book-submit">
+    <%= f.submit 'Create Book' %>
+  </div>
+
+<% end %>
