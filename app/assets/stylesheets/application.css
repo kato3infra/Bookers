@@ -269,3 +269,9 @@ color: black;
   border-style: solid;
   border-width: 2px;
 }
+
+.flash {
+  margin: 33px;
+  font-size: 13px;
+  color: rgb(0, 128, 0);
+}

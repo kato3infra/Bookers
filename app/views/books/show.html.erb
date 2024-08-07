@@ -1,4 +1,13 @@
 <div class="show-box">
+
+  <div class="flash">
+    <%= flash[:create] %>
+  </div>
+
+  <div class="flash">
+    <%= flash[:update] %>
+  </div>
+
   <div class="show-item">
     <span>Title: </span><%= @book.title %>
   </div>
