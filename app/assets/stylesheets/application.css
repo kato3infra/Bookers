@@ -132,6 +132,7 @@ color: black;
 .new-book-title {
   font-size: 13px;
   font-weight: 100;
+  height: 18px;
 }
 
 .new-book-body-box {
@@ -209,21 +210,52 @@ color: black;
 }
 
 .error-box {
-  background-color: brown;
+  background-color: rgb(240, 240, 240);
+  width: 450px;
+  font-size: 13px;
+  border-color: red;
+  border-style: solid;
+  border-width: 2px;
+  margin-bottom: 20px;
+  padding-top: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.error-header {
+  background-color: rgb(204, 0, 0);
+  color: white;
+  font-size: 13px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  margin-top: -7px;
+  margin-left: -7px;
+  margin-right: -7px;
+}
+
+.error-box-body {
+  padding-left: 40px;
+  margin: 33px;
 }
 
 .error-messages {
-  background-color: beige;
+  color: black;
 }
 
 .error-title {
   background-color: red;
   display: inline;
   padding: 2px;
+  height: 22px;
+  width: auto;
 } 
 
 .error-title-box {
-  border: 1px solid red;
+  border-color: red;
+  border-style: solid;
+  border-width: 2px;
 }
 
 .error-body {
@@ -233,5 +265,7 @@ color: black;
 }
 
 .error-body-box {
-  border: 1px solid red;
+  border-color: red;
+  border-style: solid;
+  border-width: 2px;
 }
