@@ -121,15 +121,21 @@ color: black;
   margin-bottom: 16.185px;
 }
 
+.index-new-box {
+  margin: 33px;
+}
+
 .new-book-title-box {
   margin-bottom: 10px;
 }
 
 .new-book-title {
   font-size: 13px;
+  font-weight: 100;
 }
 
 .new-book-body-box {
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 
@@ -200,4 +206,32 @@ color: black;
 
 .edit-actions a {
   color: black;
+}
+
+.error-box {
+  background-color: brown;
+}
+
+.error-messages {
+  background-color: beige;
+}
+
+.error-title {
+  background-color: red;
+  display: inline;
+  padding: 2px;
+} 
+
+.error-title-box {
+  border: 1px solid red;
+}
+
+.error-body {
+  background-color: red;
+  display: inline;
+  padding: 2px;
+}
+
+.error-body-box {
+  border: 1px solid red;
 }
