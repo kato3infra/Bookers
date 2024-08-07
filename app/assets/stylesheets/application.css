@@ -60,8 +60,8 @@
 table {
   border-collapse: collapse;
   border: none;
-  width: 745.375px; /* テーブルの幅を100%に設定 */
-  table-layout: fixed; /* テーブルの幅を固定する */
+  width: 745.375px;
+  table-layout: fixed;
   font-size: 13px;
 }
 
@@ -84,10 +84,15 @@ td:nth-child(3), td:nth-child(4), td:nth-child(5) {
   text-align: center;
 }
 
+th:nth-child(3) a, th:nth-child(4) a, th:nth-child(5) a,
+td:nth-child(3) a, td:nth-child(4) a, td:nth-child(5) a {
+color: black;
+}
+
 @media screen and (max-width: 768px) {
   table {
-    width: 100% !important; /* テーブルの幅を100%に設定 */
-    table-layout: fixed; /* テーブルの幅を固定する */
+    width: 100% !important;
+    table-layout: fixed;
   }
   
   th:nth-child(1), td:nth-child(1) {
@@ -99,7 +104,6 @@ td:nth-child(3), td:nth-child(4), td:nth-child(5) {
     width: 45%;
     word-wrap: break-word;
     white-space: normal;
-    background-color: aquamarine;
   }
   
   th:nth-child(3), th:nth-child(4), th:nth-child(5),
@@ -134,6 +138,11 @@ td:nth-child(3), td:nth-child(4), td:nth-child(5) {
   font-weight: 100;
 }
 
+.new-book-submit {
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+
 .show-box {
   margin: 33px;
   font-family: Arial, sans-serif;
@@ -152,5 +161,43 @@ td:nth-child(3), td:nth-child(4), td:nth-child(5) {
 
 .show-box .show-actions a {
   font-size: 13px;
+  color: black;
+}
+
+.edit-box {
+  margin: 33px;
+}
+
+.edit-header {
+  font-size: 18px;
+}
+
+.edit-title-box {
+  margin-bottom: 10px;
+}
+
+.edit-title {
+  font-size: 13px;
+}
+
+.edit-body-box {
+  margin-bottom: 10px;
+}
+
+.edit-body {
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.edit-submit {
+  margin-bottom: 10px;
+}
+
+.edit-actions {
+  font-size: 13px;
+  color: black;
+}
+
+.edit-actions a {
   color: black;
 }
