@@ -20,6 +20,32 @@
   box-sizing: border-box;
 }
 
+.top-box {
+  margin: 33px;
+}
+
+.top-box-title {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.top-p {
+  margin: 33px;
+  font-size: 13px;
+  line-height: 18px;
+  height: 18px;
+}
+
+.top-action {
+  font-size: 13px;
+  color: black;
+  margin-left: 33px;
+}
+
 .index-box {
   margin: 33px;
 }
