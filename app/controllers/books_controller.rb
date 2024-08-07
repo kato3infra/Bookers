@@ -36,7 +36,7 @@ class BooksController < ApplicationController
       redirect_to book_path(book.id)
     else
       flash[:update] = "Failed to update the book. Please correct the errors below and try again."
-      redirect_to '/books/#{book.id}/edit'
+      redirect_to edit_book_path(book.id)
     end
   end
 
